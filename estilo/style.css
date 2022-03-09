@@ -1,0 +1,62 @@
+@charset "UTF-8";
+
+header{
+    background-color: #012E40;
+    color: white;
+    padding: 3%;
+}
+
+.navigationHeader{
+    display: flex;
+    justify-content:space-between;
+    
+}
+.navlogo{
+    
+}
+.logo{
+    color: white;
+    text-decoration: none;
+    font-size: 2em;
+
+}
+.navHeader{
+    
+}
+.linkNavigationHeader{
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+.inputForm{
+    background-color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 30px;
+}
+.contentHeader{
+    display: flex;
+    justify-content: space-between;
+}
+.titleContentHeader{
+    font-size: 2.5em;
+    margin-bottom: -5px;
+}
+.inputBuyTemplate{
+    font-weight: bold;
+    background-color:#0CF25D ;
+    color: #012E40;
+    border: 2px solid #0CF25D;
+    border-radius: 20px;
+    padding: 10px 30px;
+    margin: 10px 10px 0 0;
+}
+.Explore{
+    font-weight: bold;
+    background-color:#012E40 ;
+    color: white;
+    border: 2px solid white;
+    border-radius: 20px;
+    padding: 10px 30px;
+    margin: 10px 0px 0 0;
+}
