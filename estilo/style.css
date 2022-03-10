@@ -1,32 +1,65 @@
 @charset "UTF-8";
 
+@font-face {
+    font-family: 'Quicksand';
+    src: url('../fontes/static/Quicksand-Medium.ttf') format('truetype');
+}
+
+@media (max-width:900px){
+    .ourServices{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width:1000px){
+
+}
+
+:root{
+    --Quicksand:'Quicksand', 'san-sreif';
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: var(--Quicksand);
+}
+
 header{
     background-color: #012E40;
     color: white;
-    padding: 3%;
+    padding: 0% 2% 5% 2%;
 }
 
-.navigationHeader{
+.navHeader{
     display: flex;
-    justify-content:space-between;
-    
+    justify-content: space-evenly;
+    align-items: center;
+    padding:2% 0;
 }
-.navlogo{
-    
+
+.containerHeader{
+    box-shadow: 1px 1px 15px black;
+    border-radius: 30px;
+    padding: 10% 2% 5% 2%;
+   
 }
+
 .logo{
     color: white;
     text-decoration: none;
     font-size: 2em;
+    max-width: 90%;
 
 }
-.navHeader{
-    
-}
+
 .linkNavigationHeader{
     color: white;
     text-decoration: none;
     margin: 0 15px;
+    max-width: 90%;
 }
 .inputForm{
     background-color: #fff;
@@ -39,9 +72,15 @@ header{
     justify-content: space-between;
 }
 .titleContentHeader{
-    font-size: 2.5em;
-    margin-bottom: -5px;
+    font-size: 2em;
+    margin-bottom: 2%;
+    
 }
+.paragraphHeader{
+    margin-bottom: 3%;
+    font-size: 0.8em;
+}
+
 .inputBuyTemplate{
     font-weight: bold;
     background-color:#0CF25D ;
@@ -49,7 +88,8 @@ header{
     border: 2px solid #0CF25D;
     border-radius: 20px;
     padding: 10px 30px;
-    margin: 10px 10px 0 0;
+    margin-right: 1%;
+    
 }
 .Explore{
     font-weight: bold;
@@ -58,5 +98,51 @@ header{
     border: 2px solid white;
     border-radius: 20px;
     padding: 10px 30px;
-    margin: 10px 0px 0 0;
+    
+}
+.titleOurServices{
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 3%;
+}
+.ourServices{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 2%;
+}
+
+.itemOurServices{
+    width: 250px;
+    height: 450px;
+    
+}
+
+.itemOurServices > h3{
+    padding-bottom: 5%;
+}
+
+.itemOurServices >  p{
+    padding-bottom: 5%;
+    color: rgba(0, 0, 0, 0.439);
+}
+
+.linkOurServices{
+    text-decoration: none;
+    color: #012E40;
+    font-weight: bold;
+}
+
+hr{
+    width: 130px;
+    margin-top: 5px;
+    color: #012E40;
+}
+
+.imgOurServices{
+    background-color: #0CF25D;
+    border-radius: 30px;
+    padding: 5px;
+    margin-bottom: 3%;
+    width: 90%;
+    height: 60%;
 }
